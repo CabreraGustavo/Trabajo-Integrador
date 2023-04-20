@@ -1,0 +1,485 @@
+*{
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  p, a, span {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  h1 {
+    font-size: 5em;
+    font-weight: bold;
+  }
+  h2{
+    font-size: 5em;
+    font-weight: bold;
+  }
+  h3{
+    font-size: 2em;
+    font-weight: bold;
+  }
+  p{
+    font-size: 1.25em;
+  }
+  button{
+    font-size: 2em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    background-color: #B72025;
+    transition: all .3s ease;
+  }
+  input, textarea{
+    background-color: #B72025;
+    color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+  }
+  input::placeholder, textarea::placeholder{
+    color: #ffffff;
+  }
+
+  button:hover{
+    background-color: #b72025c8;
+    color: #1B998B;
+    cursor: pointer;
+  }
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: 9999;
+    min-height: 70px;
+    background-color: #B72025;
+    position: sticky;   
+    top: 0;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #ffffff;
+}
+header p{
+    font-family: "Dancing Script", cursive;
+    font-size: 1.5em;
+}
+header a{
+    font-weight: bold;
+    transition: all .3s ease;
+}
+header a:hover{
+    color: #1B998B;
+    cursor: pointer;
+}
+nav{
+    padding-bottom: 15px;
+}
+nav a{
+    padding-left: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: all .3s ease;
+}
+nav a:hover{
+    color: #1B998B;
+    cursor: pointer;
+}
+.logo img{
+    height: 50px;
+}
+
+@media (min-width: 600px) {
+    header {
+        flex-direction: row;
+        padding: 0 30px;
+        justify-content: space-between;
+    }
+}
+
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+#inicio{
+    padding-top: 85px;
+
+}
+.hero{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2))
+    ,url(Images/Hero/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero h1{
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 5vh;
+}
+.hero p{
+    color: white;
+    display: flex;
+}
+.hero button{
+    margin-top: 25%;
+}
+#nosotros{
+    margin-top: 100px;
+    padding-top: 100px;
+    background-color: #ecf0f1;;
+}
+#nosotros h2{
+    font-size: 3em;
+    color: #B72025;
+    font-weight: bold;
+}
+#nosotros h2, #nosotros img, #nosotros p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+}
+#nosotros p{
+    font-size: 1.3em;
+    padding-top: 15px;
+    font-weight: bold;
+}
+#nosotros img{
+    display: none;
+    width: 35vh;
+
+}
+#menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 110px;
+    padding-top: 120px;
+    background-color: #ecf0f1;
+}
+#menu .menu-carta{
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    margin: 0 5px;
+    margin-bottom: 5px;
+    background-color: #3a9a8f;
+}
+#menu h3{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    font-size: 2em;
+    color: #fff;
+}
+#menu h2{
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #B72025;
+}
+#menu img{
+    max-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 30px;
+    transition: transform .2s;
+}
+#menu img:hover{
+    transform: scale(1.3); 
+}
+#menu p{
+    font-weight: bold;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#menu p.precio{
+    color: #fff;
+    font-size: 25px;
+}
+
+#personal{
+    margin-top: 125px;
+    padding-top: 120px;
+    background-color: #ecf0f1;
+}
+#personal h2{
+    font-size: 3em;
+    color: #B72025;
+}
+#personal .carta, #personal img, #personal p, #personal h2, #personal h3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+
+#personal .carta{
+    background-color: #B72025;
+    width: 300px;
+    padding-top: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+#personal h3 {
+    font-size: 2em;
+}
+#personal img{
+    width: 250px;
+    margin-top: 20px;
+}
+
+#personal p{
+    margin: 15px 10px 10px 10px;
+}
+
+#reclamos{
+    margin-top: 150px;
+    padding-top: 120px;
+    background-color: #ecf0f1;
+}
+#reclamos h2, #reclamos h3{
+    text-align: center;
+    margin-bottom: 50px;
+    color: #B72025;
+}
+#reclamos form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+form input, form textarea{
+    margin-bottom: 40px;
+}
+form input{
+    padding: 20px;
+}
+#contacto{
+    margin-top: 120px;
+    padding-top: 120px;
+    background-color: #ecf0f1;
+}
+#contacto p{
+    font-size: 1.25em;
+    display: block;
+    margin: 0 10px;
+}
+#contacto iframe{
+    height: 400px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+
+
+footer {
+    background-color: #B72025;
+    padding: 50px 0;
+  }
+  
+ footer h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+ footer p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .social-icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-icons li:last-child {
+    margin-right: 0;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #333333;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+  }
+  
+  .social-icons a:hover {
+    background-color: #1B998B;
+    color: #fff;
+  }
+
+  #formulario{
+    background-color: #ecf0f1;
+    margin-top: 100px;
+  }
+  #formulario select{
+    background-color: #B72025;
+    color: #ffffff;
+    font-size: 1.25em;
+    width: 35vw;
+    height: 5vh;
+  }
+  #formulario h1{
+    color:#B72025;
+  }
+  #formulario h1, #formulario h3{
+    padding: 20px 0;
+  }
+  #formulario h2{
+    padding: 30px 0;
+  }
+  #cv{
+    width: 35vw;
+    height: 5vh;
+  }
+
+  
+  @media (min-width: 768px) {
+    #nosotros .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    #nosotros .container p{
+        font-size: 1em;
+        margin-top: 5px;
+        margin-left: 20px;
+        width: 50%;
+        text-align: center;
+        
+    }
+    #nosotros .container img{
+        height: 100%;
+        max-width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    #menu .menu-carta{
+        width: 300px;
+        height: 700px;
+    }
+    #precio-moderna{
+        margin-top: 25%;
+    }
+    #precio-cebolla{
+        margin-top: 25%;
+    }
+    #precio-mortadela{
+        margin-top: 34%;
+    }
+    #precio-alemana{
+        margin-top: 37%;
+    }
+    .precio-fugga{
+        margin-top: 75%;
+    }
+    .grupo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    #personal .container{
+        height: auto;
+        
+    }
+    #personal .carta{
+        margin: 5vh 7vw;
+        height: 700px;
+        width: 50vw;
+    }
+    #personal .carta img{
+        width: 20vw;
+    }
+    .inputs{
+        display: flex;
+        flex-direction: row;
+    }
+    #nombre, #correo{
+        width: 50%;
+
+    }
+    #nombre{
+        margin-right: 10px;
+    }
+    #correo{
+        margin-left: 10px;
+    }
+    #reclamos button{
+        width: 33%;
+    }
+    
+    #contacto .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        line-height: 2em;
+    }
+    #contacto iframe{
+        width: 40vw;
+        height: 40vh;
+    }
+
+}
