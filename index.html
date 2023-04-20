@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pizzeria</title>
-        <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+        <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js" defer></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
         <script src="index.js" defer></script>
         <link rel="stylesheet" href="style.css">
@@ -18,7 +18,7 @@
     <body>
         <header>
             <a href="#inicio" class="logo">
-                <img src="/Images/Pizza-logo-vector-PNG-removebg-preview.png" alt="">
+                <img src="Images/Pizza-logo-vector-PNG-removebg-preview.png" alt="">
                 <p>Pizzeria</p>
             </a>
             <nav class="">
@@ -132,7 +132,7 @@
                     </div>
                     <div class="carta">
                         <h3>Ayudante Pizzero</h3>
-                        <img src="/Images/Personal/chef2.jpg" alt="">
+                        <img src="Images/Personal/chef2.jpg" alt="">
                         <p><b>Héctor Gonzalez</b></p>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, pariatur nulla doloremque saepe unde blanditiis commodi rem! Maiores recusandae et placeat impedit repellendus? Minus vero eligendi aut, laboriosam quo corporis?</p>
                         <ul class="social-icons">
@@ -184,26 +184,27 @@
             </div>
         </section>
         <section id="formulario">
-            <h1>Quieres trabajar con nosotros?</h1>.
-            <h2>Completa este formulario y en breves te contactamos!</h2>
-            <form id="form-wizard">
+            <div class="container">
+                <h1>Quieres trabajar con nosotros?</h1>.
+                <h2>Completa este formulario y en breves te contactamos!</h2>
+                <form id="form-wizard">
                 <div class="form-section">
-                  <h2>Paso 1</h2>
-                  <input type="text" name="name" placeholder="Nombre" required>
-                  <input type="text" name="surname" placeholder="Apellido" required>
-                  <input type="email" name="email" placeholder="Correo electrónico" required>
-                  <button type="button" class="next-button">Siguiente</button>
+                    <h2>Paso 1</h2>
+                    <input type="text" name="name" placeholder="Nombre" required>
+                    <input type="text" name="surname" placeholder="Apellido" required>
+                    <input type="email" name="email" placeholder="Correo electrónico" required>
+                    <button type="button" class="next-button">Siguiente</button>
                 </div>
                 <div class="form-section">
-                  <h2>Paso 2</h2>
-                  <input type="text" name="address" placeholder="Dirección" required>
-                  <input type="text" pattern="[0-9]{10}" required placeholder="Teléfono con código de área sin el 0 y sin el 15" />
-                  <input type="date" name="born-date" required>
-                  <button type="button" class="prev-button">Anterior</button>
-                  <button type="button" class="next-button">Siguiente</button>
+                    <h2>Paso 2</h2>
+                    <input type="text" name="address" placeholder="Dirección" required>
+                    <input type="text" pattern="[0-9]{10}" required placeholder="Teléfono con código de área sin el 0 y sin el 15" />
+                    <input type="date" name="born-date" required>
+                    <button type="button" class="prev-button">Anterior</button>
+                    <button type="button" class="next-button">Siguiente</button>
                 </div>
                 <div class="form-section">
-                  <h2>Paso 3</h2>
+                    <h2>Paso 3</h2>
                     <h3>Puesto al que aspira:</h3>
                     <select name="" id="" required>
                         <option value="">Seleccione una opción</option>
@@ -214,10 +215,11 @@
                     <br>
                     <h3>Cargá tu CV</h3>
                     <input type="file" required id="cv">
-                  <button type="button" class="prev-button">Anterior</button>
-                  <button type="submit" class="enviar">Enviar</button>
+                    <button type="button" class="prev-button">Anterior</button>
+                    <button type="submit" class="enviar">Enviar</button>
                 </div>
-              </form>
+            </div>
+            </form>
               
         </section>
         <section id="contacto">
