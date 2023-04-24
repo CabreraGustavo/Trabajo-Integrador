@@ -31,30 +31,6 @@ h1, h2, h3, h4, h5, h6 {
   p{
     font-size: 1.25em;
   }
-  button{
-    font-size: 2em;
-    font-weight: bold;
-    padding: 10px 30px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-    color: #ffffff;
-    background-color: #B72025;
-    transition: all .3s ease;
-  }
-  input, textarea{
-    background-color: #B72025;
-    color: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-    font-size: 1em;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    
-  }
-  input::placeholder, textarea::placeholder{
-    color: #ffffff;
-  }
 
   button:hover{
     background-color: #b72025c8;
@@ -270,32 +246,103 @@ nav a:hover{
 #personal p{
     margin: 15px 10px 10px 10px;
 }
-
-#reclamos{
-    margin-top: 150px;
-    padding-top: 120px;
-    background-color: #ecf0f1;
+#rrhh {
+    background-color: #ccc;
+    padding: 100px 0 250px;
 }
-#reclamos h2, #reclamos h3{
+#rrhh h1{
     text-align: center;
     margin-bottom: 50px;
     color: #B72025;
 }
-#reclamos form{
+#job-application-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .form-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-family: "lato", sans-serif;
+    font-weight: bold;
+  }
+  
+  label, input, textarea {
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #B72025;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .next-button {
+    float: right;
+  }
+  
+  .previous-button {
+    float: left;
+  }
+  
+  #summary {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  
+  #summary h2 {
+    font-size: 1.5rem;
+    font-family: "lato", sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  #summary table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #summary table td, #summary table th {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  #summary table th {
+    text-align: left;
+    background-color: #f2f2f2;
+  }
+
+  #descarga, #enviar{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: auto;
-}
-form input, form textarea{
-    margin-bottom: 40px;
-}
-form input{
-    padding: 20px;
-}
+    }
+    #descarga{
+        margin-top: 30px;
+    }
+
 #contacto{
     margin-top: 120px;
     padding-top: 120px;
     background-color: #ecf0f1;
+    padding-bottom: 200px;
 }
 #contacto p{
     font-size: 1.25em;
@@ -365,30 +412,6 @@ footer {
     color: #fff;
   }
 
-  #formulario{
-    background-color: #ecf0f1;
-    margin-top: 100px;
-  }
-  #formulario select{
-    background-color: #B72025;
-    color: #ffffff;
-    font-size: 1.25em;
-    width: 35vw;
-    height: 5vh;
-  }
-  #formulario h1{
-    color:#B72025;
-  }
-  #formulario h1, #formulario h3{
-    padding: 20px 0;
-  }
-  #formulario h2{
-    padding: 30px 0;
-  }
-  #cv{
-    width: 35vw;
-    height: 5vh;
-  }
 
   
   @media (min-width: 768px) {
@@ -455,10 +478,6 @@ footer {
         display: flex;
         flex-direction: row;
     }
-    #nombre, #correo{
-        width: 50%;
-
-    }
     #nombre{
         margin-right: 10px;
     }
@@ -479,7 +498,7 @@ footer {
     }
     #contacto iframe{
         width: 40vw;
-        height: 40vh;
+        height: 35vh;
     }
 
 }
